@@ -1,5 +1,5 @@
 {
-  "name": "basicvueoruter",
+  "name": "vuefakeauth",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
