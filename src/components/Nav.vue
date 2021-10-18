@@ -20,11 +20,11 @@
               About
             </li>
           </router-link>
-          <router-link :to="{ path: '/hello', name: 'Hello' }">
+          <router-link :to="{ path: '/login', name: 'Login' }">
             <li
               class="px-4 py-8  hover:cursor-pointer hover:bg-indigo-500 hover:text-indigo-800"
             >
-              Hello
+              Login
             </li>
           </router-link>
         </ul>
