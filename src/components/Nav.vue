@@ -35,20 +35,22 @@ const { isAuthenticated, logout } = useAuth();
               Login
             </li>
           </router-link>
-          <router-link v-else :to="{ name: 'Secret' }">
-            <li
-              class="px-4 py-8  hover:cursor-pointer hover:bg-indigo-500 hover:text-indigo-800"
-            >
-              Secret
-            </li>
-          </router-link>
-          <button v-else @click="logout">
-            <li
-              class="px-4 py-8  hover:cursor-pointer hover:bg-indigo-500 hover:text-indigo-800"
-            >
-              Logout
-            </li>
-          </button>
+          <div v-else class="flex">
+            <router-link :to="{ name: 'Secret' }">
+              <li
+                class="px-4 py-8  hover:cursor-pointer hover:bg-indigo-500 hover:text-indigo-800"
+              >
+                Secret
+              </li>
+            </router-link>
+            <button @click="logout">
+              <li
+                class="px-4 py-8  hover:cursor-pointer hover:bg-indigo-500 hover:text-indigo-800"
+              >
+                Logout
+              </li>
+            </button>
+          </div>
         </ul>
       </nav>
     </div>
