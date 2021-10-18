@@ -26,6 +26,9 @@ const routes = [
     path: "/secret",
     name: "Secret",
     component: Secret,
+    beforeEnter: (to, from, next) => {
+      next("/");
+    },
   },
   {
     path: "/:pathMatch(.*)*",
